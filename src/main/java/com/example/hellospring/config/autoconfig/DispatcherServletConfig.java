@@ -1,4 +1,4 @@
-package com.example.hellospring.config;
+package com.example.hellospring.config.autoconfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
