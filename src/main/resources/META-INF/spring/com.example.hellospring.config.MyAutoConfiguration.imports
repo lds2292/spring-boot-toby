@@ -1,0 +1,2 @@
+com.example.hellospring.config.autoconfig.DispatcherServletConfig
+com.example.hellospring.config.autoconfig.TomcatWebServerConfig
