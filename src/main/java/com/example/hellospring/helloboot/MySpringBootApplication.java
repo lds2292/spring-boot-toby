@@ -1,9 +1,10 @@
 package com.example.hellospring.helloboot;
 
-import com.example.hellospring.config.Config;
+import com.example.hellospring.config.TomcatWebServerConfig;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.web.servlet.DispatcherServlet;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -14,6 +15,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Configuration
 @ComponentScan
-@Import(Config.class)
+@Import({DispatcherServlet.class, TomcatWebServerConfig.class})
 public @interface MySpringBootApplication {
 }
