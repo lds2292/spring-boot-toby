@@ -1,8 +1,5 @@
-package com.example.hellospring.helloboot;
+package com.example.hellospring.config;
 
-import com.example.hellospring.config.TomcatWebServerConfig;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.web.servlet.DispatcherServlet;
 
@@ -13,8 +10,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Configuration
-@ComponentScan
 @Import({DispatcherServlet.class, TomcatWebServerConfig.class})
-public @interface MySpringBootApplication {
+public @interface EnableMyAutoConfiguration {
 }

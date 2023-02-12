@@ -1,5 +1,6 @@
 package com.example.hellospring.helloboot;
 
+import com.example.hellospring.config.MySpringBootApplication;
 import org.springframework.boot.SpringApplication;
 
 //@SpringBootApplication
